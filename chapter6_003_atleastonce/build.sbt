@@ -1,4 +1,4 @@
-val akkaVersion = "2.4.17"
+val akkaVersion = "2.5.27"
 
 organization := "com.example"
 name := "atleastonce"

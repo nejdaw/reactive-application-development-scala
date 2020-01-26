@@ -1,17 +1,21 @@
-val akkaVersion = "2.5.4"
+
+
+val akkaVersion = "2.5.27"
 
 val logbackVersion = "1.2.3"
 
 val scalaLogging = "3.7.2"
 
-val scalacticVersion = "3.0.1"
+val scalacticVersion = "3.1.0"
 
 val scalaTestVersion = scalacticVersion
 
 val parserCombinatorVersion = "1.0.6"
 
+ThisBuild / scalaVersion := "2.13.1"
+
 lazy val commonSettings = Seq(
-  version := "0.4-SNAPSHOT",
+  version := "0.5-SNAPSHOT",
   scalaVersion := "2.13.1"
 )
 

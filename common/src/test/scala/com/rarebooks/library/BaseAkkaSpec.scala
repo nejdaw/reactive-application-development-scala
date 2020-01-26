@@ -1,15 +1,16 @@
 package com.rarebooks.library
 
-import akka.actor.{ ActorIdentity, ActorRef, ActorSystem, Identify }
-import akka.testkit.{ EventFilter, TestEvent, TestProbe }
+import akka.actor.{ActorIdentity, ActorRef, ActorSystem, Identify}
+import akka.testkit.{EventFilter, TestEvent, TestProbe}
 import org.scalatest.BeforeAndAfterAll
 import scala.concurrent.Await
-import scala.concurrent.duration.{ DurationInt, FiniteDuration }
+import scala.concurrent.duration.{DurationInt, FiniteDuration}
+import scala.language.postfixOps
 
 abstract class BaseAkkaSpec(actorSystemName: String) extends BaseSpec with BeforeAndAfterAll {
 
   implicit class TestProbeOps(probe: TestProbe) {
-    
+
     def expectActor(path: String, max: FiniteDuration = 3.seconds): ActorRef = {
       probe.within(max) {
         var actor = null: ActorRef

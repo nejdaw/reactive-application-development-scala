@@ -1,4 +1,4 @@
-val akkaVersion = "2.5.4"
+val akkaVersion = "2.5.27"
 
 name := "chapter7_001_stopwait"
 

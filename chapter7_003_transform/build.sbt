@@ -1,6 +1,6 @@
-val akkaVersion = "2.5.4"
+val akkaVersion = "2.5.27"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.13.1"
 
 name := "catalogLoader"
 
