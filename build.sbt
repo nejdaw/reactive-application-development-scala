@@ -12,7 +12,7 @@ val parserCombinatorVersion = "1.0.6"
 
 lazy val commonSettings = Seq(
   version := "0.4-SNAPSHOT",
-  scalaVersion := "2.12.3"
+  scalaVersion := "2.13.1"
 )
 
 parallelExecution in Test := false
